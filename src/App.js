@@ -20,7 +20,6 @@ import LoginSignup from './pages/authentication/login';
 
 import ChatComponent from './pages/Chat/Chat';
 
-import ChatComponent from "./pages/Chat/Chat";
 import EditBooking from "./pages/Admin/Bookings/editBooking";
 function App() {
   return (
