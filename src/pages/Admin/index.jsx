@@ -23,9 +23,7 @@ function AdminIndex() {
           Rooms
         </button>
 
-        <button onClick={() => handleLinkClick("customers")} className="btn btn-dark">
-          Customers
-        </button>
+
 
         <button onClick={() => handleLinkClick("bookings")} className="btn btn-dark">
           Bookings
@@ -33,6 +31,10 @@ function AdminIndex() {
 
         <button onClick={() => handleLinkClick("accounts")} className="btn btn-dark">
           Accounts
+        </button>
+
+        <button onClick={() => handleLinkClick("customers")} className="btn btn-dark">
+          Customers
         </button>
         </div>
       </div>

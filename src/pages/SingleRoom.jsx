@@ -37,7 +37,7 @@ export default class SingleRoom extends Component {
             <StyledHero img={mainImg || this.state.defaultBcg }>
            
             <Banner title={`${name} room`}>
-                    <Link to="/rooms" className="btn btn-primary">Back To Rooms</Link>
+                    <Link to="/rooms" className="btn  btn-dark">Back To Rooms</Link>
             </Banner>
             </StyledHero>
             <section className="single-room container">
@@ -79,7 +79,7 @@ export default class SingleRoom extends Component {
                 <div className="p-4 clearfix">
                     <div className="row">
                        <div className="col-md-3 col-12 ml-auto">
-                          <Link to={`/booknow/${this.state.slug}`} className="btn btn-outline-primary btn-block btn-lg float-right ">Book Now</Link>
+                          <Link to={`/booknow/${this.state.slug}`} className="btn btn-dark" >Book Now</Link>
                        </div>
                     </div>
                 </div>

@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
 }
 :root {
-  --primaryColor: #0000ff;
+  --primaryColor: rgb(23, 23, 95);
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -69,7 +69,7 @@ h6 {
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
   color: var(--mainBlack);
-  background: var(--primaryColor);
+  background: transparent!important;
   padding: 0.4rem 0.9rem;
   border: 3px solid var(--primaryColor);
   transition: var(--mainTransition);
