@@ -18,7 +18,7 @@ export default function Home() {
         </Link>
         <hr></hr>
         <Link to="/chat" className="btn  btn-dark">
-          Chat with Sammy Ai
+          Chat with Sammy AI Chatbot
         </Link>
       </Banner>
 
