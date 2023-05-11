@@ -9,9 +9,16 @@ export default function Home() {
   return (
     <>
       <Hero hero="defaultHero"></Hero>
-      <Banner title="Luxurious Rooms" subtitle="deluxe rooms starting at 300$">
+      <Banner
+        title="Experience the ultimate Spartan luxury"
+        subtitle="Rooms starting at 100$"
+      >
         <Link to="/rooms" className="btn  btn-dark">
           Our Rooms
+        </Link>
+        <hr></hr>
+        <Link to="/chat" className="btn  btn-dark">
+          Chat with Sammy Ai
         </Link>
       </Banner>
 
