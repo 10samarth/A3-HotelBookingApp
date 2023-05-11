@@ -9,6 +9,8 @@ jquery(window).scroll(function () {
 });
 
 const Navbar = () => {
+
+  const isAdmin = localStorage.getItem("role") === "admin";
   return (
     <>
       <nav
@@ -71,16 +73,18 @@ const Navbar = () => {
                   AI Chat
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link"
-                  activeClassName="active_class"
-                  exact
-                  to="/admin"
-                >
-                  Admin
-                </NavLink>
-              </li>
+              {isAdmin && (
+                <li className="nav-item">
+                  <NavLink
+                    className="nav-link"
+                    activeClassName="active_class"
+                    exact
+                    to="/admin"
+                  >
+                    Admin
+                  </NavLink>
+                </li>
+              )}
             </ul>
           </div>
         </div>
