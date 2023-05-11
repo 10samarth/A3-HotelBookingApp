@@ -53,7 +53,7 @@ function ChatComponent() {
               id="message"
               type="text"
               value={prompt}
-              placeholder="Please ask to openai"
+              placeholder="Type here"
               onChange={(e) => setPrompt(e.target.value)}
             ></input>
 

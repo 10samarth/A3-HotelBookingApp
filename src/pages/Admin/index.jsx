@@ -29,12 +29,14 @@ function AdminIndex() {
           Bookings
         </button>
 
-        <button onClick={() => handleLinkClick("accounts")} className="btn btn-dark">
-          Accounts
-        </button>
+        
 
         <button onClick={() => handleLinkClick("customers")} className="btn btn-dark">
           Customers
+        </button>
+
+        <button onClick={() => handleLinkClick("accounts")} className="btn btn-dark">
+          Reports
         </button>
         </div>
       </div>
