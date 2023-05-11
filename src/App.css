@@ -132,17 +132,23 @@ h6 {
   transition:500ms ease;
 }
 
+h1, a{
+  color: #ffc107!important;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.386);
+}
+
+
 .navbar-brand{
   font-size: 32px!important;
-  color: #ffffff!important;
+  color: #ffc107!important;
 }
 .nav-link:hover{
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+  color: #ffc107;
+  border-bottom: 2px solid #ffc107;
 }
 .nav-link.active_class{
-color: #ffffff;
-border: 2px solid #ffffff;
+color: #ffc107;
+border: 2px solid #ffc107;
 font-weight: 800;
 }
 

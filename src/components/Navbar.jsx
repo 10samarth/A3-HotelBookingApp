@@ -12,10 +12,10 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="navbar navbar-expand-sm navbar-dark py-2 fixed-top"
-        style={{backgroundColor: "black"}}>
+        className="navbar navbar-expand-sm py-2 fixed-top"
+        style={{backgroundColor: "#17175f"}}>
         <div className="container-fluid ">
-          <span className="navbar-brand font-weight-bolder">A3-Hotel</span>
+          <span className="navbar-brand font-weight-bolder">A3 Spartan Resort</span>
           <a
             href="void(0)"
             className="navbar-toggler border-0"
@@ -76,7 +76,7 @@ const Navbar = () => {
                   className="nav-link"
                   activeClassName="active_class"
                   exact
-                  to="/admin/hotel"
+                  to="/admin"
                 >
                   Admin
                 </NavLink>

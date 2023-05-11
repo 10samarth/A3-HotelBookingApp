@@ -36,7 +36,7 @@ export default function HotelTable(props) {
               <td>{hotel.breakfast ? "Yes" : "No"}</td>
               <td>{hotel.featured ? "Yes" : "No"}</td>
               <td>
-                <Link to="/editRoom" className="btn btn-dark">
+                <Link to="/editRoom" className="btn btn-dark" >
                   Edit Room
                 </Link>
               </td>

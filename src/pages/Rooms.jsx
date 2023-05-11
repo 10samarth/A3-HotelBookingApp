@@ -5,14 +5,7 @@ import { Link } from 'react-router-dom';
 import RoomsContainer from '../components/RoomsContainer';
 const Rooms = () => {
     return (
-    <div>
-        <Hero hero="roomsHero">
-        </Hero>
-        <Banner title="Available Rooms" subtitle="Best in Class Room">
-                <Link to="/" className="btn btn-warning">
-                      RETURN HOME
-                </Link>
-        </Banner>
+    <div style={{ marginTop: "150px" }}>
         <RoomsContainer/>
     </div>
     )

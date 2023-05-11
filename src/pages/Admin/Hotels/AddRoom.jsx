@@ -62,38 +62,9 @@ export default function RoomForm() {
         "Internet",
         "Comfortable beds",
       ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img1,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
-        },
-      ],
+      images: [room1, room2, room3, room4],
     };
-    
+
     addRoom(room);
     setName("");
     setType("");
@@ -110,7 +81,12 @@ export default function RoomForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      style={{ marginTop: "150px", marginLeft: "35px", width: "300px", padding:"10px" }}
+      style={{
+        marginTop: "150px",
+        marginLeft: "35px",
+        width: "300px",
+        padding: "10px",
+      }}
     >
       <div>
         <label htmlFor="name">Name:</label>
@@ -143,7 +119,6 @@ export default function RoomForm() {
           onChange={(event) => setDescription(event.target.value)}
         />
       </div>
-
 
       <div>
         <label htmlFor="price">Price:</label>
@@ -208,16 +183,15 @@ export default function RoomForm() {
       {/* <Link to="/admin/hotel" className="btn btn-dark">
           Add Room
         </Link> */}
-      
-      <div style={{  paddingTop:"10px" }}>
-      <button type="submit" className="btn btn-dark">
-        Add Room
-      </button>
-      {" "}
-      <Link to="/admin/hotel" className="btn btn-dark">
+
+      <div style={{ paddingTop: "10px" }}>
+        <button type="submit" className="btn btn-dark">
+          Add Room
+        </button>{" "}
+        <Link to="/admin/hotel" className="btn btn-dark">
           Back
         </Link>
-        </div>
+      </div>
     </form>
   );
 }

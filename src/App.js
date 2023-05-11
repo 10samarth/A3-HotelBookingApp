@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import Contact from './pages/Contact';
 import Booknow from './pages/Booknow';
 
+import AdminIndex from './pages/Admin';
 import AdminHotels from './pages/Admin/Hotels/Hotels';
 import RoomForm from './pages/Admin/Hotels/AddRoom';
 
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/rooms/:slug" component={SingleRoom} />
           <Route exact path="/booknow/:slug" component={Booknow} />
 
+          <Route exact path="/admin" component={AdminIndex}/>
           <Route exact path="/admin/hotel" component={AdminHotels}/>
           <Route exact path="/addRoom" component={RoomForm}/>
 
