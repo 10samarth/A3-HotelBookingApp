@@ -1,6 +1,6 @@
 # dependencies
 /node_modules
-node_modules/
+**/node_modules/
 /.pnp
 .pnp.js
 
@@ -27,3 +27,6 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.log
+
+# server directory
+/server/node_modules/
