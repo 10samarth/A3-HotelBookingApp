@@ -70,7 +70,7 @@ const Navbar = () => {
                   exact
                   to="/chat"
                 >
-                  Chat
+                  AI Chat
                 </NavLink>
               </li>
               {isAdmin && (

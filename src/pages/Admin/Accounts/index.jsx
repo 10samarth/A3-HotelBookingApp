@@ -11,7 +11,7 @@ function AccountsComponent() {
  
       width="100%"
       height="100%"
-      src="http://localhost:3001/"
+      src="https://saltant-ideal.000webhostapp.com/"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen

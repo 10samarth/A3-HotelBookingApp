@@ -17,7 +17,6 @@ import AdminIndex from './pages/Admin';
 import AdminHotels from './pages/Admin/Hotels/Hotels';
 import RoomForm from './pages/Admin/Hotels/AddRoom';
 import LoginSignup from './pages/authentication/login';
-
 import ChatComponent from './pages/Chat/Chat';
 import EditBooking from "./pages/Admin/Bookings/editBooking";
 function App() {
