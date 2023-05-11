@@ -66,9 +66,9 @@ const Navbar = () => {
                   className="nav-link"
                   activeClassName="active_class"
                   exact
-                  to="/contact"
+                  to="/chat"
                 >
-                  Contact
+                  Chat
                 </NavLink>
               </li>
               <li className="nav-item">

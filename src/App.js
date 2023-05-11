@@ -17,6 +17,8 @@ import AdminIndex from './pages/Admin';
 import AdminHotels from './pages/Admin/Hotels/Hotels';
 import RoomForm from './pages/Admin/Hotels/AddRoom';
 
+import ChatComponent from './pages/Chat/Chat';
+
 function App() {
   return (
     <div className="App">
@@ -33,6 +35,8 @@ function App() {
           <Route exact path="/admin" component={AdminIndex}/>
           <Route exact path="/admin/hotel" component={AdminHotels}/>
           <Route exact path="/addRoom" component={RoomForm}/>
+
+          <Route exact path="/chat" component={ChatComponent}/>
 
           <Route component={Error}/>
         </Switch>
