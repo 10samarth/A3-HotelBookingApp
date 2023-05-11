@@ -36,7 +36,7 @@ const Navbar = () => {
                   className="nav-link"
                   activeClassName="active_class"
                   exact
-                  to="/"
+                  to="/home"
                 >
                   Home
                 </NavLink>

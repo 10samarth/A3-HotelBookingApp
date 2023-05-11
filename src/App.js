@@ -16,6 +16,7 @@ import Booknow from './pages/Booknow';
 import AdminIndex from './pages/Admin';
 import AdminHotels from './pages/Admin/Hotels/Hotels';
 import RoomForm from './pages/Admin/Hotels/AddRoom';
+import LoginSignup from './pages/authentication/login';
 
 import ChatComponent from './pages/Chat/Chat';
 
@@ -23,24 +24,29 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar/>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/rooms/" component={Rooms}/>
-          <Route exact path="/rooms/:slug" component={SingleRoom} />
-          <Route exact path="/booknow/:slug" component={Booknow} />
+          <Route exact path="/" component={LoginSignup} />
+          <Route>
+            <Navbar />
+            <Switch>
+              <Route exact path="/home" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/rooms" component={Rooms} />
+              <Route exact path="/rooms/:slug" component={SingleRoom} />
+              <Route exact path="/booknow/:slug" component={Booknow} />
 
-          <Route exact path="/admin" component={AdminIndex}/>
-          <Route exact path="/admin/hotel" component={AdminHotels}/>
-          <Route exact path="/addRoom" component={RoomForm}/>
+              <Route exact path="/admin" component={AdminIndex} />
+              <Route exact path="/admin/hotel" component={AdminHotels} />
+              <Route exact path="/addRoom" component={RoomForm} />
 
-          <Route exact path="/chat" component={ChatComponent}/>
+              <Route exact path="/chat" component={ChatComponent} />
 
-          <Route component={Error}/>
+              <Route component={Error} />
+            </Switch>
+            <Footer />
+          </Route>
         </Switch>
-        <Footer/>
       </BrowserRouter>
     </div>
   );
