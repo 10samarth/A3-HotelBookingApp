@@ -44,8 +44,8 @@ function BookingsComponent() {
                 <td>{booking.roomNumber}</td>
                 <td>{booking.amount}</td>
                 <td>
-                <Link to="/editRoom" className="btn btn-dark" >
-                  Edit 
+                <Link to="/editbook/double-standard" className="btn btn-dark" >
+                  View 
                 </Link>
               </td>
               </tr>

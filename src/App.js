@@ -1,17 +1,17 @@
-import React from 'react';
-import './App.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
+import React from "react";
+import "./App.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from './pages/Home';
-import Rooms from './pages/Rooms';
-import SingleRoom from './pages/SingleRoom';
-import Error from './pages/Error';
-import Navbar from './components/Navbar';
-import About from './pages/About';
-import Footer from './components/Footer';
-import Contact from './pages/Contact';
-import Booknow from './pages/Booknow';
+import Home from "./pages/Home";
+import Rooms from "./pages/Rooms";
+import SingleRoom from "./pages/SingleRoom";
+import Error from "./pages/Error";
+import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
+import Booknow from "./pages/Booknow";
 
 import AdminIndex from './pages/Admin';
 import AdminHotels from './pages/Admin/Hotels/Hotels';
@@ -20,6 +20,8 @@ import LoginSignup from './pages/authentication/login';
 
 import ChatComponent from './pages/Chat/Chat';
 
+import ChatComponent from "./pages/Chat/Chat";
+import EditBooking from "./pages/Admin/Bookings/editBooking";
 function App() {
   return (
     <div className="App">
