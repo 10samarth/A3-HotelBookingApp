@@ -6,7 +6,7 @@ const { Configuration, OpenAIApi } = require("openai");
 
 function ChatComponent() {
   const configuration = new Configuration({
-    apiKey: "key",
+    apiKey: process.env.REACT_APP_OPENAI_API_KEY,
   });
 
   const openai = new OpenAIApi(configuration);
@@ -15,7 +15,7 @@ function ChatComponent() {
   const [loading, setLoading] = useState(false);
 
   const prePrompt =
-    "Imagine you are a tech support employee of a resort named A3 Spartan Resort. Create imaginary details as required and help user answer the question like, what rooms are available or help me plan a trip. Question:";
+    "Imagine you are a customer support employee of a resort named A3 Spartan Resort. Create imaginary details as required and help user answer the question like, what rooms are available or help me plan a trip. Question:";
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -26,10 +26,8 @@ function ChatComponent() {
         temperature: 0.5,
         max_tokens: 100,
       });
-      //console.log("response", result.data.choices[0].text);
       setApiResponse(result.data.choices[0].text);
     } catch (e) {
-      //console.log(e);
       setApiResponse("Something is going wrong, Please try again.");
     }
     setLoading(false);
@@ -37,7 +35,7 @@ function ChatComponent() {
 
   return (
     <div className="bg">
-      <div style={{ marginTop: "150px" }}>
+      <div style={{ marginTop: "83px" }}>
         <div className="chatbox">
           <div className="infotext">
             <h1>A3 AI - Spartan Resort Sammy Bot</h1>
