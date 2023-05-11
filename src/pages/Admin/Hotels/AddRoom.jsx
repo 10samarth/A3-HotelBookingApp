@@ -188,7 +188,7 @@ export default function RoomForm() {
         <button type="submit" className="btn btn-dark">
           Add Room
         </button>{" "}
-        <Link to="/admin/hotel" className="btn btn-dark">
+        <Link to="/admin" className="btn btn-dark">
           Back
         </Link>
       </div>

@@ -130,7 +130,7 @@ export default class Booknow extends Component {
                         </div>
                         <div className="col-md-6 col-12 my-auto">
                             <div className="col-md-6 col-12 float-right">
-                                <button className="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#thanks">Confirm Booking</button>
+                                <button className="btn  btn-dark" data-toggle="modal" data-target="#thanks">Confirm Booking</button>
                             </div>
                         </div>
                     </div>
@@ -144,7 +144,6 @@ export default class Booknow extends Component {
                             <p className="lead">Your room is booked successfully....</p>
                         </div>
                         <div className="modal-footer">
-                            <Link to="/" className="btn btn-dark">Goto Home</Link>
                             <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
